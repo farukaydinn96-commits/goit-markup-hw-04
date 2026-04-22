@@ -1,23 +1,22 @@
-/* --- RESET & BASE STYLES --- */
+/* --- DEĞİŞKENLER (VARIABLES) --- */
 :root {
-  --primary-brand-color: #4d5ae5;
-  --pressed-state-color: #404bbf;
-  --dark-color: #2e2f42;
-  --success-color: #31d0aa;
-  --body-text-color: #434455;
-  --light-color: #f4f4fd;
-  --white-color: #ffffff;
-  --border-color: #e7e9fc;
-  --subtle-text-color: #8e8f99;
-  /* C6 & C7: Transitions */
-  --transition-duration: 250ms;
-  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark: #2e2f42;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --white: #ffffff;
+  --success: #31d0aa;
 }
 
+/* --- GENEL AYARLAR --- */
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--body-text-color);
-  background-color: var(--white-color);
+  color: var(--slate);
+  background-color: var(--white);
+  margin: 0;
 }
 
 .list {
@@ -26,20 +25,10 @@ body {
   padding: 0;
 }
 
-.link {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .container {
   width: 1158px;
-  padding: 0 15px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section {
@@ -59,25 +48,25 @@ img {
   overflow: hidden;
 }
 
-/* --- LOGO (A6: No special characters) --- */
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-brand-color);
-  text-decoration: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
-.logo-studio {
-  color: var(--dark-color);
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-/* --- HEADER --- */
+/* --- HEADER (Navigasyon & İletişim) --- */
 .header {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--cornflower);
   box-shadow:
     0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -94,92 +83,107 @@ img {
   align-items: center;
 }
 
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand);
+  text-decoration: none;
+  margin-right: 76px;
+}
+
+.logo-studio {
+  color: var(--dark);
+}
+
 .nav-list {
   display: flex;
   gap: 40px;
-  margin-left: 76px;
 }
 
 .nav-link {
-  display: block;
-  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--dark-color);
+  color: var(--dark);
+  padding: 24px 0;
+  display: block;
   text-decoration: none;
-  transition: color var(--transition-duration) var(--transition-timing-function);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--pressed-state-color);
+  color: var(--pressed-state);
 }
 
-/* «C8» Active Link Underline */
-.nav-link.current {
-  position: relative;
-  color: var(--pressed-state-color);
+/* İletişim Numaralarını Sağa Yaslayan Kısım */
+.contacts {
+  font-style: normal;
+  margin-left: auto;
 }
 
-.nav-link.current::after {
-  content: "";
-  /* «C11» Empty content for decorative elements */
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  background-color: var(--pressed-state-color);
-  border-radius: 2px;
+.contacts-list {
+  display: flex;
+  gap: 40px;
 }
 
-/* --- HERO (C1 & C2) --- */
+.contact-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--pressed-state);
+}
+
+/* --- HERO SECTION --- */
 .hero {
-  background-color: var(--dark-color);
+  background-color: var(--dark);
   padding: 188px 0;
-  background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url("../images/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 1440px;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
-  color: var(--white-color);
+  color: var(--white);
   max-width: 496px;
   margin: 0 auto 48px;
 }
 
 .hero-btn {
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  border: none;
-  background-color: var(--primary-brand-color);
-  color: var(--white-color);
+  background-color: var(--primary-brand);
+  color: var(--white);
+  font-family: inherit;
   font-weight: 500;
-  border-radius: 4px;
-  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   cursor: pointer;
-  transition: background-color var(--transition-duration)
-    var(--transition-timing-function);
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--pressed-state-color);
+  background-color: var(--pressed-state);
 }
 
-/* --- STRATEGY (ADVANTAGES) --- */
+/* --- STRATEGY (İkonlar) --- */
 .strategy-list {
   display: flex;
   gap: 24px;
@@ -194,15 +198,30 @@ img {
   align-items: center;
   justify-content: center;
   height: 112px;
-  background-color: var(--light-color);
+  background-color: var(--cloud);
   border-radius: 4px;
+  border: 1px solid var(--light-slate);
   margin-bottom: 8px;
-  border: 1px solid var(--subtle-text-color);
 }
 
-/* --- TEAM SECTION --- */
+.strategy-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.strategy-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* --- OUR TEAM --- */
 .team-section {
-  background-color: var(--light-color);
+  background-color: var(--cloud);
 }
 
 .section-title {
@@ -211,7 +230,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--dark-color);
+  color: var(--dark);
   margin-bottom: 72px;
 }
 
@@ -221,10 +240,9 @@ img {
 }
 
 .team-card {
-  background-color: var(--white-color);
+  background-color: var(--white);
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
-  /* «C3» Constant Shadow */
   box-shadow:
     0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -236,40 +254,23 @@ img {
   text-align: center;
 }
 
-/* SOCIAL ICONS (C5, C6, C7) */
-.social-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+  margin-bottom: 8px;
 }
 
-.social-item {
-  width: 40px;
-  height: 40px;
+.team-job {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
-.social-link {
-  width: 100%;
-  height: 100%;
-  background-color: var(--primary-brand-color);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color var(--transition-duration)
-    var(--transition-timing-function);
-}
-
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--pressed-state-color);
-}
-
-.social-icon {
-  fill: var(--light-color);
-}
-
-/* --- PORTFOLIO --- */
+/* --- PORTFOLIO (Overlay Efekti Dahil) --- */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -279,9 +280,7 @@ img {
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
-  /* «C4» Hover Shadow */
-  transition: box-shadow var(--transition-duration)
-    var(--transition-timing-function);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover {
@@ -296,37 +295,75 @@ img {
   overflow: hidden;
 }
 
-/* «C9 & C10» Portfolio Overlay */
 .portfolio-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: var(--primary-brand);
+  color: var(--cloud);
   padding: 40px 32px;
-  background-color: var(--primary-brand-color);
-  color: var(--light-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  /* Pressed to the bottom initially */
   transform: translateY(100%);
-  transition: transform var(--transition-duration)
-    var(--transition-timing-function);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover .portfolio-overlay {
-  transform: translateY(0%);
+  transform: translateY(0);
 }
 
 .portfolio-info {
   padding: 32px 16px;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--cornflower);
   border-top: none;
+}
+
+.portfolio-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+/* --- SOCIAL ICONS --- */
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-brand);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--pressed-state);
+}
+
+.social-icon {
+  fill: var(--cloud);
 }
 
 /* --- FOOTER --- */
 .footer {
-  background-color: var(--dark-color);
+  background-color: var(--dark);
   padding: 100px 0;
 }
 
@@ -340,28 +377,27 @@ img {
 }
 
 .logo-studio-light {
-  color: var(--light-color);
+  color: var(--cloud);
 }
 
 .footer-text {
-  color: var(--light-color);
+  color: var(--cloud);
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
   margin-top: 16px;
 }
 
-.footer-social {
-  margin-left: 0;
-}
-
 .footer-social-title {
   font-weight: 500;
-  color: var(--white-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
   margin-bottom: 16px;
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  background-color: var(--success-color);
+  background-color: var(--success);
 }
