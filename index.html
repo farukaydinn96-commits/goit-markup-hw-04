@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio - Final Project</title>
+    <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -21,24 +21,24 @@
     <header class="header">
       <div class="container header-container">
         <nav class="nav">
-          <a href="#" class="logo"
-            >WEB<span class="logo-studio">STUDIO</span></a
+          <a href="./index.html" class="logo"
+            >Web<span class="logo-dark">Studio</span></a
           >
           <ul class="nav-list list">
-            <li><a href="#studio" class="nav-link">Studio</a></li>
-            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-            <li><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li><a href="./index.html" class="nav-link current">Studio</a></li>
+            <li><a href="" class="nav-link">Portfolio</a></li>
+            <li><a href="" class="nav-link">Contacts</a></li>
           </ul>
         </nav>
-        <address class="contacts">
-          <ul class="contacts-list list">
+        <address class="address">
+          <ul class="address-list list">
             <li>
-              <a class="contact-link" href="mailto:info@devstudio.com"
+              <a href="mailto:info@devstudio.com" class="address-link"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="contact-link" href="tel:+110001111111"
+              <a href="tel:+110001111111" class="address-link"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -48,7 +48,7 @@
     </header>
 
     <main>
-      <section id="studio" class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn">Order Service</button>
@@ -57,51 +57,51 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="visually-hidden">Our Advantages</h2>
-          <ul class="strategy-list list">
-            <li class="strategy-item">
-              <div class="strategy-icon-box">
+          <h2 class="visually-hidden">Features</h2>
+          <ul class="features-list list">
+            <li class="features-item">
+              <div class="features-icon-container">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="strategy-subtitle">Strategy</h3>
-              <p class="strategy-text">
+              <h3 class="features-subtitle">Strategy</h3>
+              <p class="features-text">
                 Our goal is to identify the business problem and find optimal
                 solutions.
               </p>
             </li>
-            <li class="strategy-item">
-              <div class="strategy-icon-box">
+            <li class="features-item">
+              <div class="features-icon-container">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="strategy-subtitle">Punctuality</h3>
-              <p class="strategy-text">
+              <h3 class="features-subtitle">Punctuality</h3>
+              <p class="features-text">
                 We strive for efficiency and speed in every task to meet project
                 deadlines.
               </p>
             </li>
-            <li class="strategy-item">
-              <div class="strategy-icon-box">
+            <li class="features-item">
+              <div class="features-icon-container">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="strategy-subtitle">Diligence</h3>
-              <p class="strategy-text">
+              <h3 class="features-subtitle">Diligence</h3>
+              <p class="features-text">
                 Research and analysis allow us to design effective products.
               </p>
             </li>
-            <li class="strategy-item">
-              <div class="strategy-icon-box">
+            <li class="features-item">
+              <div class="features-icon-container">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="strategy-subtitle">Technologies</h3>
-              <p class="strategy-text">
+              <h3 class="features-subtitle">Technologies</h3>
+              <p class="features-text">
                 The use of advanced technology allows us to provide innovative
                 solutions.
               </p>
@@ -110,181 +110,145 @@
         </div>
       </section>
 
-      <section class="section team-section">
+      <section class="team section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list list">
-            <li class="team-card">
-              <img
-                src="./images/mark-guerrero.jpg"
-                alt="Mark Guerrero"
-                width="264"
-              />
-              <div class="team-info">
-                <h3 class="team-name">Mark Guerrero</h3>
-                <p class="team-job">Product Designer</p>
+            <li class="team-item">
+              <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" />
+              <div class="team-card-content">
+                <h3 class="team-subtitle">Mark Guerrero</h3>
+                <p class="team-text">Product Designer</p>
                 <ul class="social-list list">
                   <li class="social-item">
                     <a href="" class="social-link"
                       ><svg class="social-icon" width="16" height="16">
-                        <path
-                          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917.923A3.927.42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926.923-1.417A3.911 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.002zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47.599.919c-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478.92-.598 2.48.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                        /></svg
+                        <use
+                          href="./images/icons.svg#icon-instagram"
+                        ></use></svg
                     ></a>
                   </li>
                   <li class="social-item">
                     <a href="" class="social-link"
                       ><svg class="social-icon" width="16" height="16">
-                        <path
-                          d="M12.6.75h1.7l-3.7 4.2 4.3 5.7h-3.4l-2.7-3.5-3.1 3.5h-1.7l4-4.5-4.1-5.4h3.5l2.4 3.2 2.8-3.2zm-.6 8.9h.9L4.6 1.7h-1l7.4 7.9z"
-                        /></svg
+                        <use href="./images/icons.svg#icon-twitter"></use></svg
                     ></a>
                   </li>
                   <li class="social-item">
                     <a href="" class="social-link"
                       ><svg class="social-icon" width="16" height="16">
-                        <path
-                          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                        /></svg
+                        <use href="./images/icons.svg#icon-facebook"></use></svg
                     ></a>
                   </li>
                   <li class="social-item">
                     <a href="" class="social-link"
                       ><svg class="social-icon" width="16" height="16">
-                        <path
-                          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.742v7.225h2.201zm-1.1-8.212c.734 0 1.326-.572 1.326-1.277-.002-.704-.594-1.275-1.326-1.275-.734 0-1.326.571-1.326 1.275 0 .705.592 1.277 1.326 1.277zm10.966 8.212V9.406c0-2.054-1.118-3.009-2.607-3.009-1.21 0-1.752.653-2.052 1.115v-.923H8.059c.029.628 0 7.225 0 7.225h2.201V9.414c0-.419.03-.839.156-1.139.343-.838 1.112-1.707 2.404-1.707 1.694 0 2.372 1.271 2.372 3.134v4.125h2.201z"
-                        /></svg
+                        <use href="./images/icons.svg#icon-linkedin"></use></svg
                     ></a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li class="team-card">
-              <img src="./images/tom-ford.jpg" alt="Tom Ford" width="264" />
-              <div class="team-info">
-                <h3 class="team-name">Tom Ford</h3>
-                <p class="team-job">Frontend Developer</p>
+            <li class="team-item">
+              <img src="./images/tom.jpg" alt="Tom Ford" width="264" />
+              <div class="team-card-content">
+                <h3 class="team-subtitle">Tom Ford</h3>
+                <p class="team-text">Frontend Developer</p>
                 <ul class="social-list list">
                   <li class="social-item">
                     <a href="" class="social-link"
                       ><svg class="social-icon" width="16" height="16">
-                        <path
-                          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917.923A3.927.42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926.923-1.417A3.911 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.002zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47.599.919c-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478.92-.598 2.48.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                        /></svg
+                        <use
+                          href="./images/icons.svg#icon-instagram"
+                        ></use></svg
                     ></a>
                   </li>
                   <li class="social-item">
                     <a href="" class="social-link"
                       ><svg class="social-icon" width="16" height="16">
-                        <path
-                          d="M12.6.75h1.7l-3.7 4.2 4.3 5.7h-3.4l-2.7-3.5-3.1 3.5h-1.7l4-4.5-4.1-5.4h3.5l2.4 3.2 2.8-3.2zm-.6 8.9h.9L4.6 1.7h-1l7.4 7.9z"
-                        /></svg
+                        <use href="./images/icons.svg#icon-twitter"></use></svg
                     ></a>
                   </li>
                   <li class="social-item">
                     <a href="" class="social-link"
                       ><svg class="social-icon" width="16" height="16">
-                        <path
-                          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                        /></svg
+                        <use href="./images/icons.svg#icon-facebook"></use></svg
                     ></a>
                   </li>
                   <li class="social-item">
                     <a href="" class="social-link"
                       ><svg class="social-icon" width="16" height="16">
-                        <path
-                          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.742v7.225h2.201zm-1.1-8.212c.734 0 1.326-.572 1.326-1.277-.002-.704-.594-1.275-1.326-1.275-.734 0-1.326.571-1.326 1.275 0 .705.592 1.277 1.326 1.277zm10.966 8.212V9.406c0-2.054-1.118-3.009-2.607-3.009-1.21 0-1.752.653-2.052 1.115v-.923H8.059c.029.628 0 7.225 0 7.225h2.201V9.414c0-.419.03-.839.156-1.139.343-.838 1.112-1.707 2.404-1.707 1.694 0 2.372 1.271 2.372 3.134v4.125h2.201z"
-                        /></svg
+                        <use href="./images/icons.svg#icon-linkedin"></use></svg
                     ></a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li class="team-card">
-              <img
-                src="./images/camila-garcia.jpg"
-                alt="Camila Garcia"
-                width="264"
-              />
-              <div class="team-info">
-                <h3 class="team-name">Camila Garcia</h3>
-                <p class="team-job">Marketing</p>
+            <li class="team-item">
+              <img src="./images/camila.jpg" alt="Camila Garcia" width="264" />
+              <div class="team-card-content">
+                <h3 class="team-subtitle">Camila Garcia</h3>
+                <p class="team-text">Marketing</p>
                 <ul class="social-list list">
                   <li class="social-item">
                     <a href="" class="social-link"
                       ><svg class="social-icon" width="16" height="16">
-                        <path
-                          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917.923A3.927.42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926.923-1.417A3.911 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.002zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47.599.919c-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478.92-.598 2.48.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                        /></svg
+                        <use
+                          href="./images/icons.svg#icon-instagram"
+                        ></use></svg
                     ></a>
                   </li>
                   <li class="social-item">
                     <a href="" class="social-link"
                       ><svg class="social-icon" width="16" height="16">
-                        <path
-                          d="M12.6.75h1.7l-3.7 4.2 4.3 5.7h-3.4l-2.7-3.5-3.1 3.5h-1.7l4-4.5-4.1-5.4h3.5l2.4 3.2 2.8-3.2zm-.6 8.9h.9L4.6 1.7h-1l7.4 7.9z"
-                        /></svg
+                        <use href="./images/icons.svg#icon-twitter"></use></svg
                     ></a>
                   </li>
                   <li class="social-item">
                     <a href="" class="social-link"
                       ><svg class="social-icon" width="16" height="16">
-                        <path
-                          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                        /></svg
+                        <use href="./images/icons.svg#icon-facebook"></use></svg
                     ></a>
                   </li>
                   <li class="social-item">
                     <a href="" class="social-link"
                       ><svg class="social-icon" width="16" height="16">
-                        <path
-                          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.742v7.225h2.201zm-1.1-8.212c.734 0 1.326-.572 1.326-1.277-.002-.704-.594-1.275-1.326-1.275-.734 0-1.326.571-1.326 1.275 0 .705.592 1.277 1.326 1.277zm10.966 8.212V9.406c0-2.054-1.118-3.009-2.607-3.009-1.21 0-1.752.653-2.052 1.115v-.923H8.059c.029.628 0 7.225 0 7.225h2.201V9.414c0-.419.03-.839.156-1.139.343-.838 1.112-1.707 2.404-1.707 1.694 0 2.372 1.271 2.372 3.134v4.125h2.201z"
-                        /></svg
+                        <use href="./images/icons.svg#icon-linkedin"></use></svg
                     ></a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li class="team-card">
-              <img
-                src="./images/daniel-wilson.jpg"
-                alt="Daniel Wilson"
-                width="264"
-              />
-              <div class="team-info">
-                <h3 class="team-name">Daniel Wilson</h3>
-                <p class="team-job">UI Designer</p>
+            <li class="team-item">
+              <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" />
+              <div class="team-card-content">
+                <h3 class="team-subtitle">Daniel Wilson</h3>
+                <p class="team-text">UI Designer</p>
                 <ul class="social-list list">
                   <li class="social-item">
                     <a href="" class="social-link"
                       ><svg class="social-icon" width="16" height="16">
-                        <path
-                          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917.923A3.927.42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926.923-1.417A3.911 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.002zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47.599.919c-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478.92-.598 2.48.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                        /></svg
+                        <use
+                          href="./images/icons.svg#icon-instagram"
+                        ></use></svg
                     ></a>
                   </li>
                   <li class="social-item">
                     <a href="" class="social-link"
                       ><svg class="social-icon" width="16" height="16">
-                        <path
-                          d="M12.6.75h1.7l-3.7 4.2 4.3 5.7h-3.4l-2.7-3.5-3.1 3.5h-1.7l4-4.5-4.1-5.4h3.5l2.4 3.2 2.8-3.2zm-.6 8.9h.9L4.6 1.7h-1l7.4 7.9z"
-                        /></svg
+                        <use href="./images/icons.svg#icon-twitter"></use></svg
                     ></a>
                   </li>
                   <li class="social-item">
                     <a href="" class="social-link"
                       ><svg class="social-icon" width="16" height="16">
-                        <path
-                          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                        /></svg
+                        <use href="./images/icons.svg#icon-facebook"></use></svg
                     ></a>
                   </li>
                   <li class="social-item">
                     <a href="" class="social-link"
                       ><svg class="social-icon" width="16" height="16">
-                        <path
-                          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.742v7.225h2.201zm-1.1-8.212c.734 0 1.326-.572 1.326-1.277-.002-.704-.594-1.275-1.326-1.275-.734 0-1.326.571-1.326 1.275 0 .705.592 1.277 1.326 1.277zm10.966 8.212V9.406c0-2.054-1.118-3.009-2.607-3.009-1.21 0-1.752.653-2.052 1.115v-.923H8.059c.029.628 0 7.225 0 7.225h2.201V9.414c0-.419.03-.839.156-1.139.343-.838 1.112-1.707 2.404-1.707 1.694 0 2.372 1.271 2.372 3.134v4.125h2.201z"
-                        /></svg
+                        <use href="./images/icons.svg#icon-linkedin"></use></svg
                     ></a>
                   </li>
                 </ul>
@@ -294,105 +258,72 @@
         </div>
       </section>
 
-      <section id="portfolio" class="section">
+      <section class="section">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list list">
             <li class="portfolio-item">
-              <div class="portfolio-thumb">
-                <img
-                  src="./images/banking-app.jpg"
-                  alt="Banking App"
-                  width="360"
-                />
-                <p class="portfolio-overlay">
-                  14 days of free trial for banking app. Control your finances
-                  easily.
-                </p>
-              </div>
-              <div class="portfolio-info">
+              <img
+                src="./images/portfolio1.jpg"
+                alt="Banking App"
+                width="360"
+              />
+              <div class="portfolio-content">
                 <h3 class="portfolio-subtitle">Banking App</h3>
                 <p class="portfolio-text">App</p>
               </div>
             </li>
             <li class="portfolio-item">
-              <div class="portfolio-thumb">
-                <img
-                  src="./images/cashless-payment.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                />
-                <p class="portfolio-overlay">
-                  Modern and secure cashless payment solutions for your
-                  business.
-                </p>
-              </div>
-              <div class="portfolio-info">
+              <img
+                src="./images/portfolio2.jpg"
+                alt="Cashless Payment"
+                width="360"
+              />
+              <div class="portfolio-content">
                 <h3 class="portfolio-subtitle">Cashless Payment</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
             </li>
             <li class="portfolio-item">
-              <div class="portfolio-thumb">
-                <img
-                  src="./images/meditation-app.jpg"
-                  alt="Meditation App"
-                  width="360"
-                />
-                <p class="portfolio-overlay">
-                  Find your inner peace with our curated meditation sessions.
-                </p>
-              </div>
-              <div class="portfolio-info">
+              <img
+                src="./images/portfolio3.jpg"
+                alt="Meditation App"
+                width="360"
+              />
+              <div class="portfolio-content">
                 <h3 class="portfolio-subtitle">Meditation App</h3>
                 <p class="portfolio-text">App</p>
               </div>
             </li>
             <li class="portfolio-item">
-              <div class="portfolio-thumb">
-                <img
-                  src="./images/taxi-service.jpg"
-                  alt="Taxi Service"
-                  width="360"
-                />
-                <p class="portfolio-overlay">
-                  A reliable and fast taxi service at your fingertips.
-                </p>
-              </div>
-              <div class="portfolio-info">
+              <img
+                src="./images/portfolio4.jpg"
+                alt="Taxi Service"
+                width="360"
+              />
+              <div class="portfolio-content">
                 <h3 class="portfolio-subtitle">Taxi Service</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
             </li>
             <li class="portfolio-item">
-              <div class="portfolio-thumb">
-                <img
-                  src="./images/screen-illustrations.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                />
-                <p class="portfolio-overlay">
-                  Custom high-quality illustrations designed to stand out.
-                </p>
-              </div>
-              <div class="portfolio-info">
+              <img
+                src="./images/portfolio5.jpg"
+                alt="Screen Illustrations"
+                width="360"
+              />
+              <div class="portfolio-content">
                 <h3 class="portfolio-subtitle">Screen Illustrations</h3>
                 <p class="portfolio-text">Design</p>
               </div>
             </li>
             <li class="portfolio-item">
-              <div class="portfolio-thumb">
-                <img
-                  src="./images/online-courses.jpg"
-                  alt="Online Courses"
-                  width="360"
-                />
-                <p class="portfolio-overlay">
-                  Learn new skills from industry experts with interactive
-                  courses.
-                </p>
-              </div>
-              <div class="portfolio-info">
+              <img
+                src="./images/portfolio6.jpg"
+                alt="Online Courses"
+                width="360"
+              />
+              <div class="portfolio-content">
                 <h3 class="portfolio-subtitle">Online Courses</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
@@ -402,50 +333,75 @@
       </section>
     </main>
 
-    <footer id="contacts" class="footer">
+    <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-left">
-          <a href="#" class="logo footer-logo"
-            >WEB<span class="logo-studio-light">STUDIO</span></a
+        <div class="footer-info">
+          <a href="./index.html" class="logo footer-logo"
+            >Web<span class="logo-light">Studio</span></a
           >
           <p class="footer-text">
             Increase the flow of customers and sales for your business.
           </p>
         </div>
-        <div class="footer-social">
-          <p class="footer-social-title">Social media</p>
-          <ul class="social-list list">
-            <li class="social-item">
-              <a href="" class="social-link"
-                ><svg class="social-icon" width="24" height="24">
+
+        <div class="footer-socials">
+          <p class="footer-social-text">Social media</p>
+          <ul class="footer-social-list list">
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg
+                  class="footer-social-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
                   <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917.923A3.927.42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926.923-1.417A3.911 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.002zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47.599.919c-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478.92-.598 2.48.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                  /></svg
-              ></a>
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link"
-                ><svg class="social-icon" width="24" height="24">
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg
+                  class="footer-social-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
                   <path
-                    d="M12.6.75h1.7l-3.7 4.2 4.3 5.7h-3.4l-2.7-3.5-3.1 3.5h-1.7l4-4.5-4.1-5.4h3.5l2.4 3.2 2.8-3.2zm-.6 8.9h.9L4.6 1.7h-1l7.4 7.9z"
-                  /></svg
-              ></a>
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                  />
+                </svg>
+              </a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link"
-                ><svg class="social-icon" width="24" height="24">
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg
+                  class="footer-social-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
                   <path
-                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                  /></svg
-              ></a>
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                  />
+                </svg>
+              </a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link"
-                ><svg class="social-icon" width="24" height="24">
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg
+                  class="footer-social-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
                   <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.742v7.225h2.201zm-1.1-8.212c.734 0 1.326-.572 1.326-1.277-.002-.704-.594-1.275-1.326-1.275-.734 0-1.326.571-1.326 1.275 0 .705.592 1.277 1.326 1.277zm10.966 8.212V9.406c0-2.054-1.118-3.009-2.607-3.009-1.21 0-1.752.653-2.052 1.115v-.923H8.059c.029.628 0 7.225 0 7.225h2.201V9.414c0-.419.03-.839.156-1.139.343-.838 1.112-1.707 2.404-1.707 1.694 0 2.372 1.271 2.372 3.134v4.125h2.201z"
-                  /></svg
-              ></a>
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                  />
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
