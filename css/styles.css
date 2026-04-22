@@ -1,17 +1,13 @@
-/* --- DEĞİŞKENLER (VARIABLES) --- */
 :root {
   --primary-brand: #4d5ae5;
   --pressed-state: #404bbf;
   --dark: #2e2f42;
   --slate: #434455;
-  --light-slate: #8e8f99;
-  --cornflower: #e7e9fc;
   --cloud: #f4f4fd;
   --white: #ffffff;
   --success: #31d0aa;
 }
 
-/* --- GENEL AYARLAR --- */
 body {
   font-family: "Roboto", sans-serif;
   color: var(--slate);
@@ -48,29 +44,10 @@ body {
   overflow: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* --- HEADER --- */
+/* HEADER */
 .header {
-  border-bottom: 1px solid var(--cornflower);
-  box-shadow:
-    0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08);
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -87,12 +64,10 @@ img {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--primary-brand);
   text-decoration: none;
   margin-right: 76px;
+  text-transform: uppercase;
 }
 
 .logo-studio {
@@ -106,22 +81,18 @@ img {
 
 .nav-link {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--dark);
+  text-decoration: none;
   padding: 24px 0;
   display: block;
-  text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-link:hover {
   color: var(--pressed-state);
 }
 
-/* İletişim Bilgileri (Sağa Yaslı) */
+/* CONTACTS */
 .contacts {
   font-style: normal;
   margin-left: auto;
@@ -133,20 +104,16 @@ img {
 }
 
 .contact-link {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--slate);
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contact-link:hover {
   color: var(--pressed-state);
 }
 
-/* --- HERO --- */
+/* HERO */
 .hero {
   background-color: var(--dark);
   padding: 188px 0;
@@ -154,10 +121,8 @@ img {
 }
 
 .hero-title {
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
   color: var(--white);
+  font-size: 56px;
   max-width: 496px;
   margin: 0 auto 48px;
 }
@@ -165,25 +130,18 @@ img {
 .hero-btn {
   background-color: var(--primary-brand);
   color: var(--white);
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
   border: none;
-  border-radius: 4px;
   padding: 16px 32px;
-  min-width: 169px;
+  border-radius: 4px;
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:hover {
   background-color: var(--pressed-state);
 }
 
-/* --- STRATEGY (İkonlu Bölüm) --- */
+/* STRATEGY ICONS (Use tags from images/icons.svg) */
 .strategy-list {
   display: flex;
   gap: 24px;
@@ -194,45 +152,27 @@ img {
 }
 
 .strategy-icon-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 112px;
   background-color: var(--cloud);
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 8px;
 }
 
-.strategy-icon-box img {
-  width: 64px;
-  height: 64px;
+.strategy-icon-box svg {
+  fill: var(--dark);
 }
 
-.strategy-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--dark);
-  margin-bottom: 8px;
-}
-
-.strategy-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
-/* --- OUR TEAM --- */
+/* TEAM */
 .team-section {
   background-color: var(--cloud);
 }
 
 .section-title {
   font-size: 36px;
-  line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
   color: var(--dark);
   margin-bottom: 72px;
 }
@@ -244,12 +184,9 @@ img {
 
 .team-card {
   background-color: var(--white);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   width: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
-  box-shadow:
-    0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-info {
@@ -257,35 +194,22 @@ img {
   text-align: center;
 }
 
-.team-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--dark);
-  margin-bottom: 8px;
+/* SOCIAL ICONS (SVG FİLTRESİ) */
+.social-icon {
+  fill: #ffffff;
 }
 
-.team-job {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 8px;
-}
-
-/* --- SOCIAL ICONS (DÜZELTİLMİŞ) --- */
+/* İkonların kendisini beyaz yapar */
 .social-list {
   display: flex;
   justify-content: center;
   gap: 24px;
-}
-
-.social-item {
-  width: 40px;
-  height: 40px;
+  margin-top: 8px;
 }
 
 .social-link {
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
   background-color: var(--primary-brand);
   border-radius: 50%;
   display: flex;
@@ -294,19 +218,11 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-link:hover {
   background-color: var(--pressed-state);
 }
 
-/* Siyah ikonları beyaza çeviren sihirli filtre */
-.social-icon-img {
-  width: 16px;
-  height: 16px;
-  filter: brightness(0) invert(1);
-}
-
-/* --- PORTFOLIO (Overlay Efekti) --- */
+/* PORTFOLIO & OVERLAY */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -347,19 +263,11 @@ img {
 
 .portfolio-info {
   padding: 32px 16px;
-  border: 1px solid var(--cornflower);
+  border: 1px solid #e7e9fc;
   border-top: none;
 }
 
-.portfolio-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--dark);
-  margin-bottom: 8px;
-}
-
-/* --- FOOTER --- */
+/* FOOTER */
 .footer {
   background-color: var(--dark);
   padding: 100px 0;
@@ -382,16 +290,18 @@ img {
   color: var(--cloud);
   max-width: 264px;
   margin-top: 16px;
-  line-height: 1.5;
+}
+
+.footer-social {
+  margin-left: 0;
 }
 
 .footer-social-title {
-  font-weight: 500;
   color: var(--white);
+  font-weight: 500;
   margin-bottom: 16px;
 }
 
-.footer-social .social-link:hover,
-.footer-social .social-link:focus {
+.footer-social .social-link:hover {
   background-color: var(--success);
 }
