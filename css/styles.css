@@ -1,4 +1,4 @@
-/* --- RESET --- */
+/* --- RESET & GLOBALS --- */
 h1,
 h2,
 h3,
@@ -22,7 +22,6 @@ img {
   height: auto;
 }
 
-/* --- GLOBAL --- */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -56,7 +55,7 @@ body {
   overflow: hidden;
 }
 
-/* --- HEADER (TOP LINE - DÜZELTİLDİ) --- */
+/* --- HEADER (TOP LINE - YATAY HİZALAMA) --- */
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow:
@@ -68,13 +67,11 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
-  flex-grow: 1;
 }
 
 .logo {
@@ -94,6 +91,7 @@ body {
 
 .header-logo {
   margin-right: 76px;
+  padding: 24px 0;
 }
 
 .nav-list {
@@ -113,12 +111,6 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.nav-link.current {
-  color: #404bbf;
-}
-
 .nav-link.current::after {
   content: "";
   position: absolute;
@@ -128,6 +120,12 @@ body {
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.current {
+  color: #404bbf;
 }
 
 .address {
@@ -153,13 +151,13 @@ body {
   color: #404bbf;
 }
 
-/* --- HERO (Düzeltilmiş Karartma ve Genişlik) --- */
+/* --- HERO --- */
 .hero {
   max-width: 1440px;
   margin: 0 auto;
   background-color: #2e2f42;
   background-image:
-    linear-gradient(rgba(46, 47, 66, 0.8), rgba(46, 47, 66, 0.8)),
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -169,10 +167,8 @@ body {
 }
 
 .hero-title {
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 0.02em;
   color: #ffffff;
   max-width: 496px;
   margin: 0 auto 48px;
@@ -180,26 +176,19 @@ body {
 
 .hero-btn {
   background-color: #4d5ae5;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   color: #ffffff;
-  cursor: pointer;
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
-  min-width: 169px;
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:hover {
   background-color: #404bbf;
 }
 
-/* --- FEATURES & TEAM & PORTFOLIO (Kısaltılmış Özet) --- */
+/* --- FEATURES --- */
 .features-list {
   display: flex;
   gap: 24px;
@@ -220,6 +209,20 @@ body {
   border: 1px solid #8e8f99;
 }
 
+.features-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.features-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* --- TEAM --- */
 .team {
   background-color: #f4f4fd;
 }
@@ -228,8 +231,6 @@ body {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 72px;
 }
@@ -243,17 +244,29 @@ body {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
-  box-shadow:
-    0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.team-content {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.team-text {
+  margin-bottom: 8px;
 }
 
 .social-list {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-top: 8px;
 }
 
 .social-link {
@@ -271,6 +284,7 @@ body {
   background-color: #404bbf;
 }
 
+/* --- PORTFOLIO --- */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -284,10 +298,7 @@ body {
 }
 
 .portfolio-item:hover {
-  box-shadow:
-    0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-overlay-box {
@@ -298,17 +309,30 @@ body {
 .portfolio-overlay {
   position: absolute;
   top: 0;
-  left: 0;
+  background-color: #4d5ae5;
   width: 100%;
   height: 100%;
-  background-color: #4d5ae5;
-  padding: 40px 32px;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px 32px;
+  color: #f4f4fd;
 }
 
 .portfolio-item:hover .portfolio-overlay {
   transform: translateY(0);
+}
+
+.portfolio-info {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 /* --- FOOTER --- */
@@ -332,14 +356,18 @@ body {
 
 .footer-text {
   color: #f4f4fd;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   max-width: 264px;
   margin-top: 16px;
 }
 
 .footer-social-box {
   margin-left: auto;
+}
+
+.footer-social-text {
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
 .footer-social-list {
