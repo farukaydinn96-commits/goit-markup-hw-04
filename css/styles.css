@@ -107,9 +107,7 @@ body {
   background-color: var(--dark);
   padding: 188px 0;
   text-align: center;
-  background-image:
-    linear-gradient(rgba(46, 49, 66, 0.7), rgba(46, 49, 66, 0.7)),
-    url(../images/hero-bg.jpg);
+  background-image: linear-gradient(rgba(46, 49, 66, 0.7), rgba(46, 49, 66, 0.7)), url(../images/hero-bg.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -153,45 +151,43 @@ body {
   margin-bottom: 8px;
 }
 
-/* TEAM SOCIAL BOXES (RENKLİ MARKA KUTUCUKLARI) */
-.social-list {
+/* TEAM & FOOTER SOSYAL MEDYA (ORTAK FIGMA V5 TASARIMI) */
+.social-list,
+.footer-social-list {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-top: 8px;
 }
 
-.social-link {
+.social-link,
+.footer-social-link {
   width: 40px;
   height: 40px;
-  border-radius: 4px;
+  background-color: var(--primary-brand);
+  /* #4d5ae5 - Iris Rengi */
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 250ms ease;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-icon-instagram {
-  background-color: #e1306c;
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--pressed-state);
 }
 
-.team-icon-twitter {
-  background-color: #1da1f2;
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
 }
 
-.team-icon-facebook {
-  background-color: #1877f2;
-}
-
-.team-icon-linkedin {
-  background-color: #0077b5;
-}
-
-.social-icon {
+.social-icon,
+.footer-social-icon-img {
   filter: brightness(0) invert(1);
 }
 
-/* TEAM LAYOUT */
+/* TEAM SPECIFIC */
 .team {
   background-color: var(--cloud);
 }
@@ -258,7 +254,7 @@ body {
   border-top: none;
 }
 
-/* FOOTER (TEK RENK MOR STİLİ - FIGMA V5) */
+/* FOOTER SPECIFIC */
 .footer {
   background-color: var(--dark);
   padding: 100px 0;
@@ -287,30 +283,6 @@ body {
   color: var(--white);
   font-weight: 500;
   margin-bottom: 16px;
-}
-
-.footer-social-list {
-  display: flex;
-  gap: 16px;
-}
-
-.footer-social-link {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--primary-brand);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 250ms ease;
-}
-
-.footer-social-link:hover {
-  background-color: #31d0aa;
-}
-
-.footer-social-icon-img {
-  filter: brightness(0) invert(1);
 }
 
 .visually-hidden {
